@@ -16,17 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from .import views
 from django.conf.urls import url, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('songbook/', include('songbook.urls')),
+    url(r'^$', views.homepage),
+    url('songbook/', include('songbook.urls')),
 ]
+"""
 #Add URL maps to redirect the base URL to our application
 from django.views.generic import RedirectView
 urlpatterns += [
     path('', RedirectView.as_view(url='/catalog/')),
 ]
-
+"""
 urlpatterns += staticfiles_urlpatterns()

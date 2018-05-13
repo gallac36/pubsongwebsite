@@ -1,0 +1,15 @@
+{% extends 'base_layout.html'%}
+
+{% block content %}
+    <h1> Song List </h1>
+    <div class = "song_list">
+      {% for song in songbook %}
+
+      <div class="song_list">
+
+        <h2><a href="{% url 'detail' slug=song.slug %}">{{song.title}}</a></h2>
+
+      </div>
+      {% endfor %}
+    </div>
+{% endblock%}

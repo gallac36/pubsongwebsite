@@ -1,0 +1,53 @@
+{% load static from staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Articles</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <h1><a href="{% url 'list' %}">Home</a> </h1>
+      <div id="header">
+          <!-- <img src="~/Images/pubsongstext.png" alt="Irish Pub Songs header" /> -->
+
+      </div>
+
+      <div class="row">
+     <div class="column one">
+
+       <ul>
+           <li>Home</li>
+           <li>Songs</li>
+           <li>About</li>
+           <li>Request</li>
+           <li>Contact</li>
+
+       </ul>
+     </div>
+     <div class="column two">
+
+     </div>
+     <div class="column three">
+       {% block content %}
+       {% endblock%}
+     </div>
+     <div class="column four">
+
+     </div>
+
+
+ </div>
+
+
+
+
+
+
+  </body>
+</html>

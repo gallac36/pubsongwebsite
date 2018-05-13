@@ -10,4 +10,4 @@ class Song(models.Model):
 
 
 def __str__(self):
-    return self.field_name
+    return self.field_title
