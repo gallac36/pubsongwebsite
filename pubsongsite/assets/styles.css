@@ -40,13 +40,15 @@ li {
 
 body {
     margin: auto;
-    padding: 1em, 0, 0, 10em;
+
     font: 75%/1.75em "Trebuchet MS", Verdana, sans-serif;
     color: white;
     background-color: #0f0d0d;
 
 }
-
+div.wrapper {
+  min-width:786px;
+}
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
@@ -76,6 +78,7 @@ body {
 
 .three {
     width: 50%;
+    min-width: 50px;
     /* max-width: 610px;*/
     background-size: 100% 131px;
     background-image: url('pubsongstext.png'), url('pint_head.png');
@@ -86,15 +89,21 @@ body {
 
 .four {
     width: 15%;
+    max-width: 150px;
     height: 938px;
     background-image: url('pint-right.png');
     background-repeat: no-repeat;
     background-size: 100% 938px;
 }
+.five {
+    width: 5%;
+    height: 938px;
+    background-color: red;
+}
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
+
     display: table;
     clear: both;
 }
@@ -103,9 +112,11 @@ body {
 
 
 }
+div.about-stuff{
+  border: 1em;
 
 
-
+}
 #footer {
     margin: 0;
     padding: 0;

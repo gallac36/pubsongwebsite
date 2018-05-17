@@ -12,40 +12,39 @@
 
     <div class="wrapper">
 
-      <h1><a href="{% url 'list' %}">Home</a> </h1>
+      <h1> </h1>
       <div id="header">
           <!-- <img src="~/Images/pubsongstext.png" alt="Irish Pub Songs header" /> -->
 
       </div>
 
-      <div class="row">
+<div class="row">
      <div class="column one">
-
        <ul>
-           <li>Home</li>
-           <li>Songs</li>
-           <li>About</li>
-           <li>Request</li>
-           <li>Contact</li>
-
+         <li><a href="{% url 'home' %}">Home </a> </li>
+         <li><a href="{% url 'list' %}">Songs </a> </li>
+         <li><a href="{% url 'about' %}">About </a> </li>
+         <li><a href="{% url 'contact' %}">Contact </a> </li>
        </ul>
      </div>
      <div class="column two">
-
+      <!--left pint -->
      </div>
      <div class="column three">
        {% block content %}
        {% endblock%}
      </div>
      <div class="column four">
-
+         <!--right pint -->
      </div>
+  <!--   <div class="column five">
+         <!--dummy -->
+  <!--   </div>-->
+
+</div>
 
 
- </div>
-
-
-
+</div>
 
 
 
