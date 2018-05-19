@@ -7,6 +7,8 @@ class Song(models.Model):
     lyrics = models.TextField()
     author = models.CharField(max_length=50)
     chords = models.TextField(blank=True)
+    youTubeURL = models.URLField(default='www.youtube.com')
+
 
 
 def __str__(self):
