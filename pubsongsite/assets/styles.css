@@ -28,6 +28,9 @@ ul {
 p {
     font-size: 1.25em;
 }
+pre {
+    font-size: 1.25em;
+}
 
 li {
     padding: 1em 0 1em 0;
@@ -85,6 +88,7 @@ div.wrapper {
     background-position: top;
     background-repeat: no-repeat;
     padding-top: 13em;
+    padding-right: 50px;
 }
 
 .four {
