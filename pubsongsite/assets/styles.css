@@ -1,128 +1,178 @@
-#header {
-    height: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  /*background-color: #F09A9D;  Red  */
+  background-color: #0f0d0d; /*  guinness black #0f0d0d; */
 
 }
-img {
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.page{
+  margin: auto;
+  font: 75%/1.75em "Trebuchet MS", Verdana, sans-serif;
+  color: white;
+  width:100%;
+  display: block;
+
+}
+h1{
+  position: absolute;
+  font-size: 0;
+}
+header img {
+  display:block;
+  margin: auto;
+  border: 1px solid #ddd;
+}
+nav {
+  display:flex;
+  margin-right: 2%;
+  justify-content: space-around;
+
+}
+nav a{
+
+  padding-top: 3%;
+  padding: .5em;
+  color: #40b878;
+  font-size: 2em;
+}
+/* Style the navigation bar links */
+a {
+  text-decoration: none;
+  color: #b1925b;
+}
+/* unvisited link */
+a:link {
+
 }
 
-h1 {
+/* visited link */
+a:visited {
 
-    text-align: center;
-    font: 2.75em/1.75em Georgia, serif;
-    color: #996600;
-    background-color: #0f0d0d;
 }
 
-
-ul {
-    list-style-type: none;
-    padding: 1em 0 0 0;
-    margin-top:125px;
+/* mouse over link */
+a:hover {
+   color: #FF7900;
 }
 
-
+/* selected link */
+a:active {
+   color: blue;
+}
 p {
     font-size: 1.25em;
 }
 pre {
     font-size: 1.25em;
 }
-
-li {
-    padding: 1em 0 1em 0;
-    text-align: center;
-
-    font-size: 2em;
-    padding: 1em 5em 0 2em;
-    color: #996600;
+.content {
+  text-align: justify;
+  padding: 10% 5% 10% 5%;
 }
+footer {
+  display:flex;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  justify-content: space-around;
 
-body {
-    margin: auto;
-
-    font: 75%/1.75em "Trebuchet MS", Verdana, sans-serif;
-    color: white;
-    background-color: #0f0d0d;
-
-}
-div.wrapper {
-  min-width:786px;
-}
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    height: 945px; /*  Should be removed. Only for demonstration */
-    background-color: #0f0d0d;
-    margin-top: -100px;
-
-}
-.row {
-    max-width: 1024px;
-    min-width: 760px;
 }
 
 
-.one {
-    width: 15%;
-    min-width:150px;
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  header img {
+    width:100%;
+    height: auto;
+    padding: 7% 10% 0 7%;
+  }
+  .page {
+    font-size: .5em;
+    background-image: url('full-pint.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
 }
 
-.two {
-    width: 15%;
-    height: 938px;
+
+/* Desktop Styles */
+@media only screen and (min-width: 400px) {
+
+  .page {
+    margin: 20px auto; /* Vertical  Horizontal */
+  }
+  header{
+    margin-bottom: -88px;
+  }
+  nav {
+    flex-direction: column;
+
+  }
+  .flex-columns{
+
+    display:flex;
+    justify-content: center;
+    height: 945px;
+
+  }
+
+  .column-one{
+
+    min-width: 130px;
+  }
+  .column-two{
     background-image: url('pint-left.png');
     background-size: 100% 938px;
     background-repeat: no-repeat;
-}
-
-.three {
-    width: 50%;
-    min-width: 50px;
-    /* max-width: 610px;*/
+    flex: initial;
+    width: 128px;
+  }
+  .column-three{
     background-size: 100% 131px;
     background-image: url('pubsongstext.png'), url('pint_head.png');
     background-position: top;
     background-repeat: no-repeat;
-    padding-top: 13em;
-    padding-right: 50px;
-}
-
-.four {
-    width: 15%;
-    max-width: 150px;
-    height: 938px;
+  }
+  .column-four{
     background-image: url('pint-right.png');
     background-repeat: no-repeat;
     background-size: 100% 938px;
+    flex: initial;
+    width: 128px;
+  }
+
+
+  /* Style the navbar */
+  #navbar {
+    overflow: hidden;
+
+  }
+
+  /* Navbar links */
+  #navbar a {
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  .content{
+    margin-top: 130px;
+  }
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+
 }
-.five {
-    width: 5%;
-    height: 938px;
-    background-color: red;
-}
-
-/* Clear floats after the columns */
-.row:after {
-
-    display: table;
-    clear: both;
-}
-#sidebar {
 
 
 
-}
-div.about-stuff{
-  border: 1em;
 
-
-}
-#footer {
-    margin: 0;
-    padding: 0;
-    color: #996600;
 }
