@@ -13,16 +13,14 @@
     <div class="page">
 
       <header>
+      	<div class="header"> 
         <h1>Irish Pub Songs </h1>
-        <!-- <img src="~/Images/pubsongstext.png" alt="Irish Pub Songs header" /> -->
-        <img src="{% static 'pubsongstext.png' %}" alt="Irish Pub Songs header"/>
+        <!-- <img src="~/Images/pubsongstext.png" alt="Irish Pub Songs header" /> 
+        <img src="{% static 'pubsongstext.png' %}" alt="Irish Pub Songs header"/>-->
       </header>
 
 
                 <div class="flex-columns">
-
-
-
 
                      <div class="column-one">
                      <!--   <div class="navbar">
@@ -49,18 +47,19 @@
                      </div>
                        <div class="column-three">
                              <div class="content">
-                               {% block content %}
-                               {% endblock%}
+                             	<div class="space">
+                             	 	<p>--------------------------------------------------------------------------------------------</font> </p>
+                             	</div>
+		                               {% block content %}
+		                               {% endblock%}
                              </div>
                              <footer>
                                <div id="footer-left">
-                                  <h5> Get the App </h3>
-                                  <a href="{% url 'home' %}">iOS</a>
-                                  <a href="{% url 'home' %}">Android</a>
+                                  <h6>Created by <h5>Conor Gallagher</h5></h6>
                                 </div>
-                                <div id="footer-rignt">
-                                  <h6>Created by Conor Gallagher 2018</h6>
-                                  <h6>Hosted by Redstick</h6>
+                                <div id="footer-right"> 
+                               
+                                  <img  src="{% static 'redbrick_logo.png' %}" alt ="redbrick logo" style="width: 15em"></img>
                                 </div>
                             </footer>
                         </div>

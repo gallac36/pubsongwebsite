@@ -11,7 +11,7 @@ body {
 }
 
 .page{
-  margin: auto;
+  margin: 90px auto;
   font: 75%/1.75em "Trebuchet MS", Verdana, sans-serif;
   color: white;
   width:100%;
@@ -27,6 +27,7 @@ header img {
   margin: auto;
   border: 1px solid #ddd;
 }
+
 nav {
   display:flex;
   margin-right: 2%;
@@ -70,19 +71,29 @@ p {
 pre {
     font-size: 1.25em;
 }
-.content {
+
+/*.content {
   text-align: justify;
   padding: 10% 5% 10% 5%;
-}
+}*/
+
 footer {
   display:flex;
   margin-right: 2%;
   margin-bottom: 2%;
   justify-content: space-around;
-
 }
 
+.content {
+  min-height: 30em;
+}
 
+.space {
+  opacity: 0;
+}
+.new-p{
+  padding-top: 3.5em;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -106,7 +117,7 @@ footer {
 @media only screen and (min-width: 400px) {
 
   .page {
-    margin: 20px auto; /* Vertical  Horizontal */
+    margin: 90px auto; /* Vertical  Horizontal */
   }
   header{
     margin-bottom: -88px;
@@ -124,7 +135,7 @@ footer {
   }
 
   .column-one{
-
+    padding-top: 4em;
     min-width: 130px;
   }
   .column-two{
@@ -139,6 +150,7 @@ footer {
     background-image: url('pubsongstext.png'), url('pint_head.png');
     background-position: top;
     background-repeat: no-repeat;
+    max-width: 40em;
   }
   .column-four{
     background-image: url('pint-right.png');
@@ -147,7 +159,9 @@ footer {
     flex: initial;
     width: 128px;
   }
-
+.redbrick{
+  width: 150px;
+}
 
   /* Style the navbar */
   #navbar {

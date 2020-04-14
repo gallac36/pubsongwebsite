@@ -11,5 +11,5 @@ def about (request):
     return render(request, 'about_page.html')
 
 def contact (request):
-#    return HttpResponse ('about')
+#    return HttpResponse ('contact')
     return render(request, 'contact.html')
