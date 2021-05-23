@@ -1,4 +1,4 @@
-{% load static from staticfiles %}
+{% load static %}
 
 
 <!DOCTYPE html>
@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pub Song Lyrics and Chords</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
   	<link rel="stylesheet" href="{% static 'styles.css' %}">
@@ -16,9 +16,9 @@
     <div class="page">
 
       <header>
-      	<div class="header"> 
+      	<div class="header">
         <h1>Irish Pub Songs </h1>
-        <!-- <img src="~/Images/pubsongstext.png" alt="Irish Pub Songs header" /> 
+        <!-- <img src="~/Images/pubsongstext.png" alt="Irish Pub Songs header" />
         <img src="{% static 'pubsongstext.png' %}" alt="Irish Pub Songs header"/>-->
       </header>
 
@@ -26,7 +26,7 @@
                 <div class="flex-columns">
 
                 	<div class="column-one">
-                     
+
 						<nav class="navbar">
 							<ul class="navbar-nav">
 						      <li class="nav-item">
@@ -39,7 +39,7 @@
 						      </li>
 						      <li class="nav-item">
 						        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-						      </li>    
+						      </li>
 						    </ul>
 						</nav>
 					</div>
@@ -60,9 +60,9 @@
                                   <h6>Created by <h5>Conor Gallagher</h5></h6>
                                 </div>
                                <!--
-                                <div id="footer-right"> 
+                                <div id="footer-right">
                                		 <h5>2020</h5>
-                                 
+
                                 </div> -->
                             </footer>
                         </div>
