@@ -27,9 +27,8 @@ DEBUG = True
 
 
 #ALLOWED_HOSTS = ['52.50.249.23', 'ec2-52-50-249-23.eu-west-1.compute.amazonaws.com', 'localhost']
-ALLOWED_HOSTS = ['34.241.101.18']
 
-ALLOWED_HOSTS = ['34.241.101.18', 'ec2-52-50-249-23.eu-west-1.compute.amazonaws.com', 'localhost']
+ALLOWED_HOSTS = ['34.241.101.18', 'irishpubsongs.com', '2a05:d018:d78:e100:628a:25e8:7396:a8bc' 'localhost']
 
 
 
